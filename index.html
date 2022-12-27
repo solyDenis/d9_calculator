@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <br>
+    <div class="grid grid-cols-4 gap-1 border border-solid border-black rounded w-96 mx-auto text-center">
+        <input id="display" class="border-black rounded border-solid border-2 col-span-3" >
+        <div onclick="document.getElementById('display').value=''" class="p-4 text-center text-white rounded border-solid bg-green-500">c</div>
+        <div onclick="document.getElementById('display').value+= 1" class="p-4 text-center text-white rounded border-solid bg-green-500">1</div>
+        <div onclick="document.getElementById('display').value+=2" class="p-4 text-center text-white rounded border-solid bg-green-500">2</div>
+        <div onclick="document.getElementById('display').value+=3" class="p-4 text-center text-white rounded border-solid bg-green-500">3</div>
+        <div onclick="document.getElementById('display').value+='/'" class="p-4 text-center text-white rounded border-solid bg-green-500">/</div>
+        <div onclick="document.getElementById('display').value+=4" class="p-4 text-center text-white rounded border-solid bg-green-500">4</div>
+        <div onclick="document.getElementById('display').value+=5" class="p-4 text-center text-white rounded border-solid bg-green-500">5</div>
+        <div onclick="document.getElementById('display').value+=6" class="p-4 text-center text-white rounded border-solid bg-green-500">6</div>
+        <div onclick="document.getElementById('display').value+='*'" class="p-4 text-center text-white rounded border-solid bg-green-500">*</div>
+        <div onclick="document.getElementById('display').value+=7" class="p-4 text-center text-white rounded border-solid bg-green-500">7</div>
+        <div onclick="document.getElementById('display').value+=8" class="p-4 text-center text-white rounded border-solid bg-green-500">8</div>
+        <div onclick="document.getElementById('display').value+=9" class="p-4 text-center text-white rounded border-solid bg-green-500">9</div>
+        <div onclick="document.getElementById('display').value+='+'" class="p-4 text-center text-white rounded border-solid bg-green-500">+</div>
+        <div onclick="document.getElementById('display').value+=0" class="p-4 text-center text-white rounded border-solid bg-green-500">0</div>
+        <div onclick="document.getElementById('display').value+='.'" class="p-4 text-center text-white rounded border-solid bg-green-500">.</div>
+        <div onclick="solve()"     class="p-4 text-center text-white rounded border-solid bg-green-500">=</div>
+        <di onclick="document.getElementById('display').value+='-'" class="p-4 text-center text-white rounded border-solid bg-green-500">-</div>
+        <script>
+            function solve(){
+                //grag the content of display box
+                let x = document.getElementById('display').value   
+
+                //take the content and put it into eval function
+
+                let answer = eval(x)
+                //print out answer in display box
+                document.getElementById('display').value= answer
+
+            }
+            
+        </script>
+    </div>
+</body>
+</html>>
